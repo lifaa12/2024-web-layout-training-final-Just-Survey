@@ -16,7 +16,7 @@
     position: relative;
     &::after {
       content: "";
-      background: center/cover url("../assets/images/quote.svg");
+      background: center/cover url("/assets/images/quote.svg");
       width: 29px;
       height: 29px;
       position: absolute;

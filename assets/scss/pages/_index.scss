@@ -1,8 +1,8 @@
 .banner-bg {
-  background: no-repeat center/cover url("../assets/images/banner_bg_mobile.png");
+  background: no-repeat center/cover url("/assets/images/banner_bg_mobile.png");
   height: 620px;
   @include pc {
-    background: no-repeat url("../assets/images/banner_bg_desktop.png");
+    background: no-repeat center/cover url("/assets/images/banner_bg_desktop.png");
     height: 804px;
   }
 }
@@ -33,7 +33,7 @@
   &::before {
     @include pc {
       content: "";
-      background: center/cover url("../assets/images/pattern_lefttop.svg");
+      background: center/cover url("/assets/images/pattern_lefttop.svg");
       width: 633px;
       height: 403px;
       position: absolute;
@@ -45,7 +45,7 @@
   &::after {
     @include pc {
       content: "";
-      background: center/cover url("../assets/images/pattern_rightbottom.svg");
+      background: center/cover url("/assets/images/pattern_rightbottom.svg");
       width: 384px;
       height: 324px;
       position: absolute;
@@ -103,7 +103,7 @@
   }
   &::before {
     content: "";
-    background: center/cover url("../assets/images/grass_left.png");
+    background: center/cover url("/assets/images/grass_left.png");
     width: 90px;
     height: 90px;
     position: absolute;
@@ -118,7 +118,7 @@
   }
   &::after {
     content: "";
-    background: center/cover url("../assets/images/grass_right.png");
+    background: center/cover url("/assets/images/grass_right.png");
     width: 90px;
     height: 90px;
     position: absolute;
