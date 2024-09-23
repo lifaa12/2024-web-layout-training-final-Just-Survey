@@ -1,0 +1,23 @@
+.text-body {
+  font-size: 16px;
+  color: #212529;
+  line-height: 24px;
+  font-weight: 400;
+}
+.text-body-s {
+  font-size: 14px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 400;
+}
+.flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-column-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

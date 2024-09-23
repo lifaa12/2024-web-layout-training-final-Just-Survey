@@ -1,0 +1,28 @@
+.btn {
+  font-weight: 500;
+  border-radius: 4px;
+}
+.btn-lg {
+  border-radius: 4.8px;
+}
+.btn-sm {
+  border-radius: 3.2px;
+}
+.btn-primary {
+  &:hover,
+  &:active {
+    background: #e74f20 !important;
+  }
+}
+.btn-secondary {
+  &:hover,
+  &:active {
+    background: #0a91a3 !important;
+  }
+}
+.btn-purple-500 {
+  &:hover,
+  &:active {
+    background: #8e0c63 !important;
+  }
+}

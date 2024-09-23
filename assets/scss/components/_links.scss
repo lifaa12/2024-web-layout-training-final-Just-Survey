@@ -1,0 +1,7 @@
+.link-primary {
+  font-weight: 500;
+  &:hover,
+  &:active {
+    color: #e74f20 !important;
+  }
+}

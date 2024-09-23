@@ -1,0 +1,60 @@
+.solutions-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px 32px 32px;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  .title {
+    position: static;
+    z-index: 99;
+    color: #fff;
+    > h4 {
+      margin-bottom: 4px;
+    }
+    > h6 {
+      margin-bottom: 88px;
+      @include pc {
+        margin-bottom: 83px;
+      }
+    }
+  }
+  img {
+    margin-bottom: 56px;
+  }
+  .text-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+.secondary .solutions-card {
+  &::after {
+    background: #3cb8c8;
+  }
+}
+.primary .solutions-card {
+  &::after {
+    background: #ff7d3c;
+  }
+}
+.purple .solutions-card {
+  &::after {
+    background: #a32b8d;
+  }
+}
