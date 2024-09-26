@@ -8,11 +8,11 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 1.3,
   spaceBetween: 24,
-  autoplay: {
-    delay: 2000,  
-    disableOnInteraction: false,  
-    pauseOnMouseEnter: true,   
-  },
+  // autoplay: {
+  //   delay: 2000,  
+  //   disableOnInteraction: false,  
+  //   pauseOnMouseEnter: true,   
+  // },
   breakpoints:{
     992:{
       slidesPerView: 2.2,
@@ -20,10 +20,12 @@ const swiper = new Swiper('.swiper', {
     },
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.custom-swiper-pagination',
+    clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.next-btn',
+    prevEl: '.prev-btn',
+    clickable: true,
   },
 });

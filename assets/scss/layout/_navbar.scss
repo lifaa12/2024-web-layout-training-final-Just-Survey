@@ -1,0 +1,20 @@
+.navbar {
+  @include pc {
+    --bs-navbar-padding-y: 17px;
+    .border-top {
+      border: none !important;
+    }
+    .gap-4 {
+      gap: 48px !important;
+    }
+    .row {
+      width: 220px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

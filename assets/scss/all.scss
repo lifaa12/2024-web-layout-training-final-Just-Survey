@@ -16,14 +16,21 @@ $utilities: map-merge(
         (
           responsive: true
         )
+      ),
+    "border-width":
+      map-merge(
+        map-get($utilities, "border-width"),
+        (
+          responsive: true
+        )
       )
   )
 );
 @import "bootstrap/scss/utilities/api";
 
 // base
-@import "./base/base";
 @import "./base/mixin";
+@import "./base/base";
 
 // helpers
 @import "./helpers/utilities";
@@ -31,10 +38,11 @@ $utilities: map-merge(
 // components
 @import "./components/button";
 @import "./components/links";
-@import "./components/swiper-card";
+@import "./components/swiper";
 @import "./components/solutions-card";
 
 // layout
+@import "./layout/navbar";
 @import "./layout/footer";
 
 // pages
