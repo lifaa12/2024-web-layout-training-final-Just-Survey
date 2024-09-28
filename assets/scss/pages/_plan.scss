@@ -1,0 +1,11 @@
+.plan-title {
+  padding: 8px 20px;
+  @include pc {
+    padding: 20px;
+  }
+}
+.td-center {
+  td {
+    text-align: center;
+  }
+}

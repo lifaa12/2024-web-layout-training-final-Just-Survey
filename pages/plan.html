@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Survey問卷服務網</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+  <%- include("layout/navbar.ejs") %>
+    <div class="bg-gray-800">
+      <div class="container-xl py-6">
+        <div class="text-center mb-6">
+          <h4 class="mb-3 fs-md-1 text-white">選擇適合你的方案</h4>
+          <p class="text-body-s text-gray-200 contact-subtitle">
+            量身定制的問卷解決方案<br>提升你的問卷設計與數據分析效率
+          </p>
+        </div>
+        <div class="row">
+          <div class="secondary col-md-4 mb-6 mb-md-0 position-relative">
+            <div class="solutions-card outline-secondary bg-white h-100">
+              <div class="title">
+                <h4 class="fs-md-3">基礎版</h4>
+                <h6>Basic Plan</h6>
+              </div>
+              <img src="../assets/images/solution_basic.svg" alt="solutions" class="img-fluid">
+              <h6 class="mb-3">起步之選，簡單上手</h6>
+              <div class="text-group">
+                <h4>$0</h4>
+                <h6>完全免費</h6>
+              </div>
+              <ul class="list list-unstyled">
+                <li><i class="bi bi-check2-circle me-1 text-secondary-600"></i>問卷類型：10</li>
+                <li><i class="bi bi-check2-circle me-1 text-secondary-600"></i>問卷類型：基本選擇題</li>
+                <li><i class="bi bi-check2-circle me-1 text-secondary-600"></i>數據分析：基礎統計圖表</li>
+              </ul>
+            </div>
+            <a href="plan.html"
+              class="btn py-md-2 btn-secondary link-white position-absolute start-50 bottom-0 trans-50 w-75">免費試用</a>
+          </div>
+          <div class="primary col-md-4 mb-6 mb-md-0 position-relative">
+            <div class="solutions-card bg-white outline-primary h-100">
+              <div class="title">
+                <h4 class="fs-md-3">擴展版</h4>
+                <h6>Growth Plan</h6>
+              </div>
+              <img src="../assets/images/solution_growth.svg" alt="solutions" class="img-fluid">
+              <h6 class="mb-3">進階功能，更多功能</h6>
+              <div class="text-group">
+                <h4>$6,200</h4>
+                <h6>/ 年</h6>
+              </div>
+              <ul class="list list-unstyled">
+                <li><i class="bi bi-check2-circle me-1 text-primary-600"></i>問卷類型：50</li>
+                <li><i class="bi bi-check2-circle me-1 text-primary-600"></i>問卷類型：支援條件邏輯</li>
+                <li><i class="bi bi-check2-circle me-1 text-primary-600"></i>數據分析：可視化及交叉分析</li>
+              </ul>
+            </div>
+            <a href="plan.html"
+              class="btn py-md-2 btn-primary link-white position-absolute start-50 bottom-0 trans-50 w-75">開始註冊</a>
+          </div>
+          <div class="purple col-md-4  position-relative">
+            <div class="solutions-card bg-white outline-purple h-100">
+              <div class="title">
+                <h4 class="fs-md-3">菁英版</h4>
+                <h6>Elite Plan</h6>
+              </div>
+              <img src="../assets/images/solution_elite.svg" alt="solutions" class="img-fluid">
+              <h6 class="mb-3">全面功能，無限潛力</h6>
+              <div class="text-group">
+                <h4>$12,200</h4>
+                <h6>/ 年</h6>
+              </div>
+              <ul class="list list-unstyled">
+                <li><i class="bi bi-check2-circle me-1 text-purple-600"></i>問卷類型：無限制</li>
+                <li><i class="bi bi-check2-circle me-1 text-purple-600"></i>問卷類型：所有類型</li>
+                <li><i class="bi bi-check2-circle me-1 text-purple-600"></i>數據分析：深度AI分析</li>
+              </ul>
+            </div>
+            <a href="plan.html"
+              class="btn py-md-2 btn-purple-500 link-white position-absolute start-50 bottom-0 trans-50 w-75">立即升級</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xl">
+      <div class="plan-title">
+        <table class="table table-borderless td-center">
+          <tbody>
+            <tr class="row">
+              <th class="col-2"></th>
+              <td class="col fs-4">
+                <p class="text-secondary fw-bold fs-5 fs-md-4">基礎版</p>
+                <p class="text-secondary fs-6 fs-md-6">Basic <br class="d-md-none">Plan</p>
+              </td>
+              <td class="col fs-4">
+                <p class="text-primary-600 fw-bold fs-5 fs-md-4">擴展版</p>
+                <p class="text-primary-600 fs-6 fs-md-6">Growth <br class="d-md-none">Plan</p>
+              </td>
+              <td class="col fs-4">
+                <p class="text-purple fw-bold fs-5 fs-md-4">菁英版</p>
+                <p class="text-purple fs-6 fs-md-6">Elite <br class="d-md-none">Plan</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="accordion" id="planAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fs-5 fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              問卷類型
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#planAccordion">
+            <div class="accordion-body py-1">
+              <table class="table table-hover td-center">
+                <tbody>
+                  <tr class="row">
+                    <th class="col-2 py-3">單行文字</th>
+                    <td class="col py-3 text-center"><i class="fs-4 bi bi-check-lg text-secondary-600"></i>
+                    </td>
+                    <td class="col py-3 text-center"><i class="fs-4 bi bi-check-lg text-primary-600"></i>
+                    </td>
+                    <td class="col py-3 text-center"><i class="fs-4 bi bi-check-lg text-purple-600"></i>
+                    </td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">簡答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">詳答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">數字題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">日期題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">下拉式選單</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">刻度滑桿</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">複選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">圖片檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">所有類型檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button fs-5 fw-bold collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              問卷設計
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#planAccordion">
+            <div class="accordion-body">
+              <table class="table table-hover td-center">
+                <tbody>
+                  <tr class="row">
+                    <th class="col-2 py-3">單行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">簡答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">詳答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">數字題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">日期題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">下拉式選單</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">刻度滑桿</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">複選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">圖片檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">所有類型檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button fs-5 fw-bold collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              資料分析
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#planAccordion">
+            <div class="accordion-body">
+              <table class="table table-hover td-center">
+                <tbody>
+                  <tr class="row">
+                    <th class="col-2 py-3">單行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">簡答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">詳答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">數字題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">日期題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">下拉式選單</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">刻度滑桿</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">複選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">圖片檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">所有類型檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button fs-5 fw-bold collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              其他
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#planAccordion">
+            <div class="accordion-body">
+              <table class="table table-hover td-center">
+                <tbody>
+                  <tr class="row">
+                    <th class="col-2 py-3">單行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多行文字</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">多選題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">簡答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">詳答題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">數字題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">日期題</th>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-secondary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">下拉式選單</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">刻度滑桿</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">單選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">複選核取方塊</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">圖片檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-primary-600"></i></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                  <tr class="row">
+                    <th class="col-2 py-3">所有類型檔案上傳</th>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"></td>
+                    <td class="col py-3"><i class="fs-4 bi bi-check-lg text-purple-600"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trail-bg">
+      <div class="container-xl">
+        <div class="row pt-md-8 justify-content-md-center">
+          <div class="col-md-10 my-4">
+            <div class="trial f-column-cc bg-secondary rounded-1 position-relative">
+              <h4 class="fs-md-1 mb-3 text-white">免費試用無風險</h4>
+              <h6 class="fs-md-4 mb-3 mb-md-5 text-white">輕鬆體驗，放心使用！</h6>
+              <a href="#" class="btn btn-primary py-md-2 mt-3 mt-md-0 link-white">立即註冊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("layout/footer.ejs") %>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

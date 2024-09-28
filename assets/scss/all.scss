@@ -40,6 +40,7 @@ $utilities: map-merge(
 @import "./components/links";
 @import "./components/swiper";
 @import "./components/solutions-card";
+@import "./components/accordion";
 
 // layout
 @import "./layout/navbar";
@@ -47,6 +48,7 @@ $utilities: map-merge(
 
 // pages
 @import "./pages/index.scss";
+@import "./pages/plan";
 
 // 8  1
 // 12  2
