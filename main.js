@@ -56,6 +56,9 @@ const addSurvey = () => {
   surveyAdd.forEach((item, index) => {
     item.addEventListener("click", (e) => {
       e.preventDefault();
+      if (e.target.text !== "單行文字") {
+        return;
+      };
       let obj = {};
       obj.type = data[index].type;
       obj.input = data[index].input;
