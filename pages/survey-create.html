@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Survey問卷服務網</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+  <%- include("layout/admin_navbar.ejs") %>
+    <div class="bg-white py-6">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card mb-3">
+              <div class="card-header">
+                AndyH12
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2">目前方案：擴展版</h5>
+                <p class="card-text mb-3">
+                  生效時間：2024/09/01
+                </p>
+                <a href="#" class="btn btn-primary ms-auto link-white">升級</a>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    我的問卷
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="#" class="link-gray-600">113員工旅遊意見調查</a>
+                    <a href="#" class="link-gray-600">午餐訂餐</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    問卷管理
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="#" class="link-gray-600 active">建立問卷</a>
+                    <a href="#" class="link-gray-600">草稿區</a>
+                    <a href="#" class="link-gray-600">模板庫</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    使用者管理
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="#" class="link-gray-600">建立問卷</a>
+                    <a href="#" class="link-gray-600">草稿區</a>
+                    <a href="#" class="link-gray-600">模板庫</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    支援與幫助
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="#" class="link-gray-600">建立問卷</a>
+                    <a href="#" class="link-gray-600">草稿區</a>
+                    <a href="#" class="link-gray-600">模板庫</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <h4 class="mb-3">週休三日調查表</h4>
+            <ul class="list-unstyled survey-create-demo">
+              <li>
+                <div class="card">
+                  <div class="card-header">
+                    <p>單行文字</p>
+                    <a href="#" class="surveycard-delete">
+                      <i class="bi bi-x-circle fs-5"></i>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <input type="text" placeholder="標題" value="員工姓名" class="w-100 mb-4 py-1">
+                    <input type="text" class="w-100" placeholder="單行文字">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-header">
+                    <p>單行文字</p>
+                    <a href="#" class="surveycard-delete">
+                      <i class="bi bi-x-circle fs-5"></i>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <input type="text" placeholder="標題" value="員工編號" class="w-100 mb-4 py-1">
+                    <input type="text" class="w-100" placeholder="單行文字">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="card-header">
+                    <p>單選題</p>
+                    <a href="#" class="surveycard-delete">
+                      <i class="bi bi-x-circle fs-5"></i>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <input type="text" placeholder="標題" value="贊成週休三日嗎？" class="w-100 mb-4 py-1">
+                    <ul class="list-unstyled" style="padding-left: 2px;">
+                      <li class="my-1"><i class="bi bi-circle me-1"></i>
+                        <input type="text" placeholder="選項文字" value="贊成">
+                      </li>
+                      <li class="my-1"><i class="bi bi-circle me-1"></i>
+                        <input type="text" placeholder="選項文字" value="不贊成">
+                      </li>
+                      <li class="my-1"><i class="bi bi-circle me-1"></i>
+                        <input type="text" placeholder="選項文字" value="沒意見">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="survey-create-area list-unstyled">
+            </ul>
+            <div class="flex-cc">
+              <a class="fs-5" data-bs-toggle="collapse" href="#surveyCreateCollapse" role="button" aria-expanded="false"
+                aria-controls="surveyCreateCollapse">新增頁面<i class="bi bi-plus-circle ms-1"></i></a>
+            </div>
+            <div class="collapse" id="surveyCreateCollapse">
+              <div class="card card-body border-0">
+                <ul class="flex-cc list-unstyled gap-2 flex-wrap survey-add">
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">單行文字</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">多行文字</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">單選題</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">多選題</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">簡答題</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">詳答題</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">數字題</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">日期題</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">下拉式選單</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">刻度滑桿</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">單選核取方塊</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">複選核取方塊</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary-400 text-white" href="#" role="button">圖片檔案上傳</a>
+                  </li>
+                  <li>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="您的方案不支援此功能">
+                      <a class="btn btn-primary-400 text-white disabled" href="#" role="button">所有類型檔案上傳</a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("layout/admin_footer.ejs") %>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-.navbar-page {
+.admin-navbar {
   @include pc {
     --bs-navbar-padding-y: 17px;
     .border-top {
@@ -7,9 +7,9 @@
     .gap-4 {
       gap: 48px !important;
     }
-    .row {
-      width: 220px;
-    }
+    // .row {
+    //   width: 220px;
+    // }
   }
   .navbar-toggler {
     border: none;

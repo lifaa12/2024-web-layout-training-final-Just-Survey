@@ -1,0 +1,23 @@
+.survey-create-demo,
+.survey-create-area {
+  .card {
+    border-color: #ffac46;
+    margin-bottom: 24px;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    background: #ffac46;
+    > p {
+      font-size: 20px;
+    }
+  }
+  .surveycard-delete {
+    color: #212529;
+  }
+  .card-body {
+    .card-title {
+      margin-bottom: 12px;
+    }
+  }
+}
