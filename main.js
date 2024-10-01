@@ -1,4 +1,6 @@
-import './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import Collapse from 'bootstrap/js/dist/collapse';
+import Popover from 'bootstrap/js/dist/popover';
 import './assets/scss/all.scss';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
@@ -34,7 +36,7 @@ const swiper = new Swiper('.swiper', {
 // surveyCreate
 const surveyList = document.querySelector(".survey-create-area");
 const surveyCreateCollapse = document.getElementById('surveyCreateCollapse');
-const collapse = new bootstrap.Collapse(surveyCreateCollapse, {
+const collapse = new Collapse(surveyCreateCollapse, {
   toggle: false
 });
 const data = [
@@ -64,7 +66,7 @@ const addSurvey = () => {
       obj.input = data[index].input;
       showData.push(obj);
       renderData();
-      collapse.hide();
+      // collapse.hide();
     });
   });
 };
@@ -81,5 +83,5 @@ const renderData = () => {
 // bootstrap popover
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
+  return new Popover(popoverTriggerEl)
 });
