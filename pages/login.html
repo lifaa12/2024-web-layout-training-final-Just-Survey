@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Survey問卷服務網</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+  <%- include("layout/navbar.ejs") %>
+    <div class="container-xl py-2">
+      <div class="row">
+        <div class="col-lg-6 ">
+          <main class="d-flex flex-column align-items-center justify-content-center vh-100">
+            <h3 class="mb-2 mb-lg-3 fs-lg-1">登入</h3>
+            <h5 class="mb-3 fs-lg-4">立即體驗無限可能</h5>
+            <div class="form-floating mb-3 w-75">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">電子郵件地址</label>
+            </div>
+            <div class="form-floating w-75 mb-1">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">密碼</label>
+            </div>
+            <div class="d-flex justify-content-end w-75 mb-3">
+              <a href="#">忘記密碼</a>
+            </div>
+            <a href="#" class="btn btn-primary-400 link-white w-75 mb-lg-3">登入</a>
+            <div class="other-login my-5"></div>
+            <a href="#" class="btn btn-outline-primary w-75 mb-3">以Google登入</a>
+            <a href="#" class="btn btn-outline-primary w-75 mb-3">以Apple登入</a>
+            <span>還沒有帳號嗎？立即<a href="register.html">註冊</a></span>
+          </main>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="vh-100 f-column-cc bg-primary-200 rounded-4">
+            <img src="/assets/images/professional_1.png" alt="register" class="w-75">
+            <div class="f-column-cc mt-5">
+              <h4 class="mb-2 text-secondary-600">你信賴的問卷解決方案，助你每一步</h4>
+              <h5 class="text-gray-800">立即登入，將洞察轉化為行動。</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("layout/footer.ejs") %>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

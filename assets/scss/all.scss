@@ -51,6 +51,7 @@ $utilities: map-merge(
 // pages
 @import "./pages/index.scss";
 @import "./pages/plan";
+@import "./pages/login-register";
 
 // 8  1
 // 12  2
@@ -64,3 +65,4 @@ $utilities: map-merge(
 // 128  10
 
 // 語意標籤
+// 表單驗證

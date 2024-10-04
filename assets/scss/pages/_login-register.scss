@@ -1,0 +1,35 @@
+.other-login,
+.other-register {
+  width: 70%;
+  height: 1px;
+  background: #6c757d;
+  position: relative;
+  @include pc {
+    width: 70%;
+  }
+  &:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff6e2;
+    font-size: 13px;
+    @include pc {
+      background: #fff;
+      font-size: 16px;
+    }
+  }
+}
+.other-register::after {
+  content: "或透過以下方式註冊";
+}
+.other-login::after {
+  content: "或透過以下方式登入";
+}
+main {
+  background: #fff6e2;
+  border-radius: 16px;
+  @include pc {
+    background: #fff;
+  }
+}
