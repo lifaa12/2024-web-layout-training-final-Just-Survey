@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Survey問卷服務網</title>
+  <link rel="shortcut icon" href="/2024-web-layout-training-final-Just-Survey/assets/favicon-ffb73199.ico">
+  <script type="module" crossorigin src="/2024-web-layout-training-final-Just-Survey/assets/main-f8e880a0.js"></script>
+  <link rel="stylesheet" href="/2024-web-layout-training-final-Just-Survey/assets/main-9e5c21e1.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 py-lg-3 admin-navbar">
+  <div class="container-xl">
+    <a class="navbar-brand me-lg-6" href="index.html">
+      <img src="/2024-web-layout-training-final-Just-Survey/assets/Logotype-caf64990.svg" alt="" width="134" height="40" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+      <div class="row py-4 py-lg-0 border-top border-gray-300">
+        <div class="col">
+          <a href="index.html" class="btn btn-outline-primary link-primary w-100">登出</a>
+        </div>
+        <div class="col">
+          <div class="btn-group w-100">
+            <button type="button" class="btn btn-primary text-white dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              AndyH12
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="admin.html">管理首頁</a></li>
+              <li><a class="dropdown-item" href="#">用戶資訊</a></li>
+              <li><a class="dropdown-item" href="#">付款設定</a></li>
+              <li><a class="dropdown-item" href="#">升級帳戶</a></li>
+              <li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="bg-white py-6">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card mb-3">
+              <div class="card-header">
+                AndyH12
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2">目前方案：擴展版</h5>
+                <p class="card-text mb-3">
+                  生效時間：2024/09/01
+                </p>
+                <a href="#" class="btn btn-primary ms-auto link-white">升級</a>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    我的問卷
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="admin.html" class="link-gray-600 active">113員工旅遊意見調查</a>
+                    <a href="#" class="link-gray-600">午餐訂餐</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    問卷管理
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="survey-create.html" class="link-gray-600">建立問卷</a>
+                    <a href="#" class="link-gray-600">草稿區</a>
+                    <a href="#" class="link-gray-600">模板庫</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    使用者管理
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="#" class="link-gray-600">建立問卷</a>
+                    <a href="#" class="link-gray-600">草稿區</a>
+                    <a href="#" class="link-gray-600">模板庫</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    支援與幫助
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column gap-1">
+                    <a href="#" class="link-gray-600">建立問卷</a>
+                    <a href="#" class="link-gray-600">草稿區</a>
+                    <a href="#" class="link-gray-600">模板庫</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row mb-4">
+              <div class="col-lg-5 flex-stretch mb-4 mb-lg-0">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <h5 class="card-title mb-4">問卷名稱：113員工旅遊意見調查</h5>
+                    <p class="card-text">建立日期：2024年4月20日</p>
+                    <p class="card-text">目前狀態：開放填答</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col flex-stretch mb-4 mb-md-0">
+                <div class="card w-100">
+                  <div class="card-header">
+                    累計填答份數
+                  </div>
+                  <div class="card-body mt-3">
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-end">
+                        <h4 class="mb-0 card-title">1,231</h4>
+                        <span>份</span>
+                      </div>
+                      <span class="badge rounded-pill bg-primary-400 d-flex align-items-center ">
+                        <span class="material-symbols-outlined text-dark fs-5">
+                          trending_up
+                        </span>
+                        <span class="text-body-s">5%</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col flex-stretch mb-4 mb-md-0">
+                <div class="card w-100">
+                  <div class="card-header">
+                    累計瀏覽次數
+                  </div>
+                  <div class="card-body mt-3">
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-end">
+                        <h4 class="mb-0 card-title">13,231</h4>
+                        <span>次</span>
+                      </div>
+                      <span class="badge rounded-pill bg-primary-400 d-flex align-items-center ">
+                        <span class="material-symbols-outlined text-dark fs-5">
+                          trending_up
+                        </span>
+                        <span class="text-body-s">10%</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col">
+                <div class="chart-wrap">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card w-100">
+                  <div class="card-header d-flex justify-content-between">
+                    <p class="fw-bold">回覆摘要</p>
+                    <a href="#" class="btn btn-sm btn-primary text-white fw-normal">匯出明細</a>
+                  </div>
+                  <div class="card-body">
+                    <div class="card mb-4">
+                      <div class="card-header">
+                        <i class="bi bi-caret-right-fill me-1"></i>想玩國內或國外？
+                      </div>
+                      <div class="card-body">
+                        <div class="chart-wrap">
+                          <canvas id="myDoughnutChart"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-4">
+                      <div class="card-header">
+                        <i class="bi bi-caret-right-fill me-1"></i>國內想去哪個地區玩？
+                      </div>
+                      <div class="card-body">
+                        <div class="chart-wrap">
+                          <canvas id="myDoughnutChart2"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-4">
+                      <div class="card-header">
+                        <i class="bi bi-caret-right-fill me-1"></i>國外想去哪個地區玩？
+                      </div>
+                      <div class="card-body">
+                        <div class="chart-wrap">
+                          <canvas id="myDoughnutChart3"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark">
+  <footer class="container-xl py-4">
+    <p class="text-body-s text-white text-center">© 2024 JustSurvey All rights reserved</p>
+  </footer>
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        const myMixedChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['2024-04', '2024-05', '2024-06', '2024-07', '2024-08', '2024-09', '2024-10'],
+            datasets: [
+              {
+                type: 'bar',
+                label: '累計填答份數',
+                data: [145, 274, 403, 553, 784, 964, 1231],
+                backgroundColor: 'rgba(255, 172, 70, 0.3)',
+                borderColor: 'rgba(255, 172, 70, 0.6)',
+                borderWidth: 1,
+                yAxisID: 'y1',
+              },
+              {
+                type: 'line',
+                label: '累計瀏覽次數',
+                data: [743, 1642, 2542, 5246, 7425, 9354, 13231],
+                borderColor: 'rgba(60, 184, 200, 1)',
+                backgroundColor: 'rgba(60, 184, 200, 1)',
+                fill: false,
+                yAxisID: 'y2',
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y1: {
+                type: 'linear',
+                position: 'left',
+                beginAtZero: true,
+                ticks: {
+                  color: 'rgba(255, 125, 60, 1)',
+                  display: window.matchMedia("(max-width: 500px)").matches ? false : true
+                }
+              },
+              y2: {
+                type: 'linear',
+                position: 'right',
+                beginAtZero: true,
+                ticks: {
+                  color: 'rgba(10, 145, 163, 1)',
+                  display: window.matchMedia("(max-width: 500px)").matches ? false : true
+                },
+                grid: {
+                  drawOnChartArea: false
+                }
+              }
+            },
+          },
+        });
+        window.addEventListener('resize', () => {
+          const displayY1 = window.matchMedia("(max-width: 500px)").matches ? false : true;
+          myMixedChart.options.scales.y1.ticks.display = displayY1;
+          myMixedChart.options.scales.y2.ticks.display = displayY1;
+        });
+        const doughnut1 = document.getElementById('myDoughnutChart').getContext('2d');
+        const myDoughnutChart = new Chart(doughnut1, {
+          type: 'doughnut',
+          data: {
+            labels: ['國內', '國外', '沒意見'],
+            datasets: [{
+              label: 'My Doughnut Data',
+              data: [34, 64, 2],
+              backgroundColor: [
+                'rgba(255, 172, 70, 1)',
+                'rgba(159, 236, 244, 1)',
+                'rgba(204, 124, 189, 1)'
+              ],
+              borderColor: [
+                'rgba(255, 172, 70, 1)',
+                'rgba(159, 236, 244, 1)',
+                'rgba(204, 124, 189, 1)'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'top'
+              }
+            }
+          }
+        });
+        const doughnut2 = document.getElementById('myDoughnutChart2').getContext('2d');
+        const myDoughnutChart2 = new Chart(doughnut2, {
+          type: 'doughnut',
+          data: {
+            labels: ['北部', '中部', '南部', '東部', '離島'],
+            datasets: [{
+              label: 'My Doughnut Data',
+              data: [21, 13, 39, 20, 7],
+              backgroundColor: [
+                'rgba(255, 172, 70, 1)',
+                'rgba(159, 236, 244, 1)',
+                'rgba(204, 124, 189, 1)',
+                'rgba(108, 117, 125, 1)',
+                'rgba(153, 102, 255, 1)'
+              ],
+              borderColor: [
+                'rgba(255, 172, 70, 1)',
+                'rgba(159, 236, 244, 1)',
+                'rgba(204, 124, 189, 1)',
+                'rgba(108, 117, 125, 1)',
+                'rgba(153, 102, 255, 1)'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'top'
+              }
+            }
+          }
+        });
+        const doughnut3 = document.getElementById('myDoughnutChart3').getContext('2d');
+        const myDoughnutChart3 = new Chart(doughnut3, {
+          type: 'doughnut',
+          data: {
+            labels: ['中國', '日本', '韓國', '東南亞'],
+            datasets: [{
+              label: 'My Doughnut Data',
+              data: [1, 64, 30, 5],
+              backgroundColor: [
+                'rgba(255, 172, 70, 1)',
+                'rgba(159, 236, 244, 1)',
+                'rgba(204, 124, 189, 1)',
+                'rgba(108, 117, 125, 1)'
+              ],
+              borderColor: [
+                'rgba(255, 172, 70, 1)',
+                'rgba(159, 236, 244, 1)',
+                'rgba(204, 124, 189, 1)',
+                'rgba(108, 117, 125, 1)'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'top'
+              }
+            }
+          }
+        });
+      </script>
+</body>
+
+</html>
