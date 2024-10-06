@@ -42,7 +42,7 @@ const collapse = new Collapse(surveyCreateCollapse, {
 const data = [
   {
     type: "單行文字",
-    input: "<input type='text' class='w-100' placeholder='單行文字'>"
+    input: "<input type='text' class='form-control mb-4' placeholder='單行文字'>"
   }
 ];
 let showData = [];
@@ -66,7 +66,7 @@ const addSurvey = () => {
       obj.input = data[index].input;
       showData.push(obj);
       renderData();
-      // collapse.hide();
+      collapse.hide();
     });
   });
 };
@@ -75,7 +75,7 @@ const addSurvey = () => {
 const renderData = () => {
   let str = "";
   showData.forEach((item) => {
-    str += `<li><div class="card"><div class="card-header"><p>${item.type}</p><a href="#" class="surveycard-delete"><i class="bi bi-x-circle fs-5"></i></a></div><div class="card-body"><input type="text" placeholder="標題" class="w-100 mb-4 py-1">${item.input}</div></div></li>`;
+    str += `<li><div class="card"><div class="card-header"><p>${item.type}</p><a href="#" class="surveycard-delete"><i class="bi bi-x-circle fs-5"></i></a></div><div class="card-body"><input class="form-control border-primary-400 mb-4" type="text" placeholder="標題">${item.input}</div></div></li>`;
   });
   surveyList.innerHTML = str;
 };

@@ -30,7 +30,7 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     我的問卷
                   </button>
@@ -38,14 +38,14 @@
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body d-flex flex-column gap-1">
-                    <a href="#" class="link-gray-600">113員工旅遊意見調查</a>
+                    <a href="admin.html" class="link-gray-600">113員工旅遊意見調查</a>
                     <a href="#" class="link-gray-600">午餐訂餐</a>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     問卷管理
                   </button>
@@ -53,7 +53,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body d-flex flex-column gap-1">
-                    <a href="#" class="link-gray-600 active">建立問卷</a>
+                    <a href="survey-create.html" class="link-gray-600 active">建立問卷</a>
                     <a href="#" class="link-gray-600">草稿區</a>
                     <a href="#" class="link-gray-600">模板庫</a>
                   </div>
@@ -105,8 +105,8 @@
                     </a>
                   </div>
                   <div class="card-body">
-                    <input type="text" placeholder="標題" value="員工姓名" class="w-100 mb-4 py-1">
-                    <input type="text" class="w-100" placeholder="單行文字">
+                    <input class="form-control border-primary-400 mb-4" type="text" placeholder="標題" value="員工姓名">
+                    <input class="form-control mb-4" type="text" placeholder="單行文字">
                   </div>
                 </div>
               </li>
@@ -119,8 +119,8 @@
                     </a>
                   </div>
                   <div class="card-body">
-                    <input type="text" placeholder="標題" value="員工編號" class="w-100 mb-4 py-1">
-                    <input type="text" class="w-100" placeholder="單行文字">
+                    <input class="form-control border-primary-400 mb-4" type="text" placeholder="標題" value="員工編號">
+                    <input class="form-control mb-4" type="text" placeholder="單行文字">
                   </div>
                 </div>
               </li>
@@ -133,16 +133,31 @@
                     </a>
                   </div>
                   <div class="card-body">
-                    <input type="text" placeholder="標題" value="贊成週休三日嗎？" class="w-100 mb-4 py-1">
+                    <input class="form-control border-primary-400 mb-4" type="text" placeholder="標題" value="贊成週休三日嗎">
                     <ul class="list-unstyled" style="padding-left: 2px;">
-                      <li class="my-1"><i class="bi bi-circle me-1"></i>
-                        <input type="text" placeholder="選項文字" value="贊成">
+                      <li>
+                        <div class="input-group w-50 mb-2">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="">
+                          </div>
+                          <input type="text" class="form-control" placeholder="選項文字" value="贊成">
+                        </div>
                       </li>
-                      <li class="my-1"><i class="bi bi-circle me-1"></i>
-                        <input type="text" placeholder="選項文字" value="不贊成">
+                      <li>
+                        <div class="input-group w-50 mb-2">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="">
+                          </div>
+                          <input type="text" class="form-control" placeholder="選項文字" value="不贊成">
+                        </div>
                       </li>
-                      <li class="my-1"><i class="bi bi-circle me-1"></i>
-                        <input type="text" placeholder="選項文字" value="沒意見">
+                      <li>
+                        <div class="input-group w-50 mb-2">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="">
+                          </div>
+                          <input type="text" class="form-control" placeholder="選項文字" value="沒意見">
+                        </div>
                       </li>
                     </ul>
                   </div>
