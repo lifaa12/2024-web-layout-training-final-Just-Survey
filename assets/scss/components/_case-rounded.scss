@@ -1,0 +1,16 @@
+.case-rounded {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  > .rounded-pill {
+    height: 200px;
+    margin-bottom: 16px;
+  }
+  img {
+    width: 60%;
+  }
+  h6 {
+    margin-bottom: 8px;
+  }
+}
