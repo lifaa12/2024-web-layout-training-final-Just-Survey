@@ -2,6 +2,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+// index swiper
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
