@@ -1,0 +1,20 @@
+.collapse-section {
+  margin-bottom: 24px;
+  .section-title {
+    margin: 24px 0;
+  }
+  .accordion-button {
+    background: transparent !important;
+    &:focus {
+      box-shadow: none;
+    }
+    &:not(.collapsed) {
+      color: #495057 !important;
+    }
+  }
+  .accordion-body {
+    > p {
+      color: #e74f20;
+    }
+  }
+}
